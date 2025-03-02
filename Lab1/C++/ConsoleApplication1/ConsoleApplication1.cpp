@@ -53,12 +53,11 @@ int main() {
 
 	first.fillStr("1234");
 
-	std::cout << "Sring: " << first.getStr() << std::endl;
+	std::cout << "String: " << first.getStr() << std::endl;
 	std::cout << "Length: " << first.countStr() << std::endl;
 
 	first.pushStr();
-	first.pushStr();
-	std::cout << "Sring after push: " << first.getStr() << std::endl;
+	std::cout << "String after push: " << first.getStr() << std::endl;
 }
 	
 	

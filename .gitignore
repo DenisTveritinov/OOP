@@ -1,20 +1,88 @@
+# Игнорировать все файлы по умолчанию
+*
+
+# Включить сам .gitignore
+!.gitignore
+
+# Включить файлы с кодом
+!*.cs
+!*.cpp
+!*.h
+#!*.hpp  # Раскомментируйте, если используете .hpp
+
+# Исключить папки с кодом (и их подпапки) из игнорирования
+!Lab1/
+!Lab1/**/
+!Lab2/
+!Lab2/**/
+
+# Игнорировать артефакты сборки и временные файлы
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.deps.json
+*.runtimeconfig.json
 *.dSYM
 *.out
-*.exe
 *.class
 *.jar
-*.dll
 *.dylib
 *.so
-*.dylib
-*.sln
+*.ilk
+*.exp
+*.lib
+*.tlog
+*.log
+*.cache
+*.sourcelink.json
+*.assets.cache
+*.nuget.g.props
+*.nuget.g.targets
+*.nuget.dgspec.json
+*.BuildWithSkipAnalyzers
+*.CoreCompileInputs.cache
+*.FileListAbsolute.txt
+*.genruntimeconfig.cache
+project.assets.json
+project.nuget.cache
+packages/
+*.nupkg
+
+# Игнорировать файлы проектов
+*.csproj
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
-main
-.vscode
-*.opendb
-.vs/
-x64/Debug/
-x64/
+*.sln
 
+# Игнорировать настройки IDE
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+*.opendb
+
+# Игнорировать специфичные папки
+x64/
+x64/Debug/
+
+# Игнорировать системные файлы Windows
+Thumbs.db
+desktop.ini
+*.lnk
+$RECYCLE.BIN/
+System Volume Information/
+
+# Игнорировать временные файлы
+*.tmp
+*.bak
+~$*
+
+# Игнорировать файлы блокировок
+*.lock
+
+# Игнорировать конкретные файлы, если нужно
+main
