@@ -16,7 +16,11 @@ class Str
 
     public char[] getStr()
     {
-        return arr != null ? (char[])arr.Clone() : null;
+        if (arr != null)
+        {
+            return (char[])arr.Clone();
+        }
+        return null;
     }
 
     public int countStr()
