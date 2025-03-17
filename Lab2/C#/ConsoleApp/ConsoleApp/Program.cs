@@ -19,7 +19,6 @@ class Program
         Str str4 = new Str(str2); // копия str2
         Console.WriteLine(new string(str4.getStr()));
 
-        // Дополнительно: демонстрация PushStr()
         Console.WriteLine("Метод Push");
         str4.PushStr();
         Console.WriteLine(new string(str4.getStr()));
