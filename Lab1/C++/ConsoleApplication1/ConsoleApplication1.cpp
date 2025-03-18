@@ -52,7 +52,6 @@ int main() {
 	Strin first;
 
 	first.fillStr("1234");
-
 	std::cout << "String: " << first.getStr() << std::endl;
 	std::cout << "Length: " << first.countStr() << std::endl;
 
