@@ -34,10 +34,11 @@ float Rhombus::CalcArea() {
 float Rhombus::CalcPerimeter() {
 	float sides[4];
 
-	sides[0] = sqrt(pow(this->xB - this->xA, 2) + pow(this->yB - this->yA, 2)); // Сторона AB
-	sides[1] = sqrt(pow(this->xC - this->xB, 2) + pow(this->yC - this->yB, 2)); // Сторона BC
-	sides[2] = sqrt(pow(this->xD - this->xC, 2) + pow(this->yD - this->yC, 2)); // Сторона CD
-	sides[3] = sqrt(pow(this->xA - this->xD, 2) + pow(this->yA - this->yD, 2)); // Сторона DA
+	sides[0] = calcDiagDistanse(this->xA, this->yA, this->xB, this->yB); // Сторона AB
+	sides[1] = calcDiagDistanse(this->xB, this->yB, this->xC, this->yC); // Сторона BC
+	sides[2] = calcDiagDistanse(this->xC, this->yC, this->xD, this->yD); // Сторона CD
+	sides[3] = calcDiagDistanse(this->xD, this->yD, this->xA, this->yA); // Сторона DA
+
 
 	float perimeter = sides[0] + sides[1] + sides[2] + sides[3];
 
