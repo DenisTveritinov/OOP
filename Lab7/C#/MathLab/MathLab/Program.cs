@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using MathLab;
+
+class Program
+{
+    static void Main()
+    {
+        Calculate calculate = new Calculate(1,2,3);
+
+        Console.WriteLine(calculate.calculateExample());
+    }
+}
