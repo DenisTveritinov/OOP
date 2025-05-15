@@ -8,5 +8,6 @@ namespace Container
 {
     internal interface IReplaceable
     {
+        public void replaceChar(char oldChar, char newChar);
     }
 }
