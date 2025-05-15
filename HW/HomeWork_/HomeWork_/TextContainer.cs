@@ -19,7 +19,7 @@ namespace HomeWork_
             get
             {
                 if (index < 0 || index >= text.Count)
-                    throw new IndexOutOfRangeException("Невірний індекс");
+                    throw new IndexOutOfRangeException("Невірний індекс ");
                 return text[index].Length;
             }
         }
